@@ -2,11 +2,13 @@
   "name": "raycast-effect",
   "type": "module",
   "version": "0.0.1",
-  "module": "./dist/Raycast.js",
+  "exports": {
+    ".": "./dist/Raycast.js"
+  },
   "types": "./dist/Raycast.d.ts",
   "description": "Write Raycast Extensions with Effect!",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup --dts-resolve"
   },
   "keywords": [
     "raycast",
@@ -32,6 +34,6 @@
     "@effect/platform": "^0.77.2",
     "@effect/platform-node": "^0.73.2",
     "@raycast/api": "^1.91.2",
-    "effect": "^3.0.0"
+    "effect": "^3.13.2"
   }
 }

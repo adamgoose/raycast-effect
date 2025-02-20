@@ -13,3 +13,9 @@ export const view =
   <P,>(fn: (props: P) => Effect.Effect<React.ReactNode, never, R | services>) =>
   (props: P): React.ReactNode =>
     fn(props).pipe(runtime.runSync);
+
+export const use =
+  <R,>(runtime: ManagedRuntime.ManagedRuntime<R | services, never>) =>
+  <P, T, E>(fn: (...args: P[]) => Effect.Effect<T, E, R | services>) =>
+  (...args: P[]) =>
+    fn(...args).pipe(runtime.runPromise);
