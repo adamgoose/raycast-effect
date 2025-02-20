@@ -1,0 +1,37 @@
+{
+  "name": "raycast-effect",
+  "type": "module",
+  "version": "0.0.1",
+  "module": "./dist/Raycast.js",
+  "types": "./dist/Raycast.d.ts",
+  "description": "Write Raycast Extensions with Effect!",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "raycast",
+    "effect"
+  ],
+  "author": "Adam Engebretson <adam@enge.me>",
+  "license": "ISC",
+  "devDependencies": {
+    "@effect/platform": "^0.77.2",
+    "@effect/platform-node": "^0.73.2",
+    "@microsoft/api-extractor": "^7.50.0",
+    "@raycast/api": "^1.91.2",
+    "@raycast/eslint-config": "^1.0.11",
+    "@types/node": "^22.13.4",
+    "@types/react": "^19.0.10",
+    "effect": "^3.13.2",
+    "eslint": "^8.57.1",
+    "prettier": "^3.5.1",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "@effect/platform": "^0.77.2",
+    "@effect/platform-node": "^0.73.2",
+    "@raycast/api": "^1.91.2",
+    "effect": "^3.0.0"
+  }
+}
