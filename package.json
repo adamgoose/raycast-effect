@@ -1,7 +1,7 @@
 {
   "name": "raycast-effect",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "exports": {
     ".": "./dist/Raycast.js"
   },
@@ -16,6 +16,7 @@
     "effect"
   ],
   "author": "Adam Engebretson <adam@enge.me>",
+  "repository": "github:adamgoose/raycast-effect",
   "license": "ISC",
   "devDependencies": {
     "@effect/platform": "^0.77.2",
